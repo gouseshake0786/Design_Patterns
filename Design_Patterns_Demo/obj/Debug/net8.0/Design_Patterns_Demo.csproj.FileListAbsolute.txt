@@ -1,0 +1,14 @@
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\obj\Debug\net8.0\Design_Patterns_Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\obj\Debug\net8.0\Design_Patterns_Demo.AssemblyInfoInputs.cache
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\obj\Debug\net8.0\Design_Patterns_Demo.AssemblyInfo.cs
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\obj\Debug\net8.0\Design_Patterns_Demo.csproj.CoreCompileInputs.cache
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\bin\Debug\net8.0\Design_Patterns_Demo.exe
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\bin\Debug\net8.0\Design_Patterns_Demo.deps.json
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\bin\Debug\net8.0\Design_Patterns_Demo.runtimeconfig.json
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\bin\Debug\net8.0\Design_Patterns_Demo.dll
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\bin\Debug\net8.0\Design_Patterns_Demo.pdb
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\obj\Debug\net8.0\Design_Patterns_Demo.dll
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\obj\Debug\net8.0\refint\Design_Patterns_Demo.dll
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\obj\Debug\net8.0\Design_Patterns_Demo.pdb
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\obj\Debug\net8.0\Design_Patterns_Demo.genruntimeconfig.cache
+C:\Learning_Initiative\DOT_NET\DESIGN_PATTERNS\Design_Patterns_Demo\Design_Patterns_Demo\obj\Debug\net8.0\ref\Design_Patterns_Demo.dll
