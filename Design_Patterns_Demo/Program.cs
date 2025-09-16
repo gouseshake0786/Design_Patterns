@@ -4,6 +4,7 @@
     using Design_Patterns_Demo.Adaptor_Pattern.Target;
     using Design_Patterns_Demo.Behavioral_Patterns.Chain_Of_Responsibility;
     using Design_Patterns_Demo.Behavioral_Patterns.ObserverPattern;
+    using Design_Patterns_Demo.Behavioral_Patterns.Stratrgy;
     using Design_Patterns_Demo.Builder;
     using Design_Patterns_Demo.Decorator;
     using Design_Patterns_Demo.Factory;
@@ -127,6 +128,26 @@
             subject.UpdateUserAge(10);
 
 
+            var subject1 = new Subject1("Mahamad", 20);
+            var observer1 = new Observer1();
+            subject1.Subscribe(observer1);
+            subject1.UpdateUserAge(10);
+
+            #region Strategy Pattern
+
+            Console.WriteLine("========================== Strategy Pattern =============================");
+            int[] numbers = { 5, 3, 8, 1 };
+
+            SortingContext context = new SortingContext();
+
+            // Use Bubble Sort
+            context.SetStrategy(new BubbleSort());
+            context.SortArray(numbers);
+
+            // Use Quick Sort
+            context.SetStrategy(new QuickSort());
+            context.SortArray(numbers);
+            #endregion
             #endregion
         }
     }
