@@ -1,6 +1,11 @@
 ﻿namespace Design_Patterns_Demo
 {
+    using Design_Patterns_Demo.Adaptor_Pattern.Adaptor;
+    using Design_Patterns_Demo.Adaptor_Pattern.Target;
+    using Design_Patterns_Demo.Behavioral_Patterns.Chain_Of_Responsibility;
+    using Design_Patterns_Demo.Behavioral_Patterns.ObserverPattern;
     using Design_Patterns_Demo.Builder;
+    using Design_Patterns_Demo.Decorator;
     using Design_Patterns_Demo.Factory;
     using Design_Patterns_Demo.Furnitures;
     using Design_Patterns_Demo.Managers;
@@ -50,6 +55,8 @@
 
             #endregion
 
+            #endregion
+
             #region Builder Pattern
             Console.WriteLine("=========================================================================");
             IHouseBuilder builder = new SimpleHouseBuilder();
@@ -69,6 +76,56 @@
             Console.WriteLine(emp1);
             Console.WriteLine(emp2);
             #endregion
+
+            #region Adaptor
+            Console.WriteLine("====================== Adaptor ===================================");
+            IPrinter printer = new PrinterAdapter(new Adaptor_Pattern.Adaptee.LegacyPrinter());
+            printer.Print("Hello Adapter Pattern");
+
+
+            #endregion
+
+            #region Decorater Pattern
+            Console.WriteLine("========================== Decorater ======================================");
+            ICoffee coffee = new SimpleCoffee();
+            Console.WriteLine($"{coffee.GetDescription()} => ${coffee.GetCost()}");
+
+            // Add milk
+            coffee = new MilkDecorator(coffee);
+            Console.WriteLine($"{coffee.GetDescription()} => ${coffee.GetCost()}");
+
+            // Add sugar
+            coffee = new SugarDecorator(coffee);
+            Console.WriteLine($"{coffee.GetDescription()} => ${coffee.GetCost()}");
+            #endregion
+
+
+            #region Behavioral Patrern
+            #region Chain Of Resposibility
+            Console.WriteLine("============================== Chain of resposibility ===========================");
+            // Create handlers
+            Handler level1 = new Level1Support();
+            Handler level2 = new Level2Support();
+            Handler level3 = new Level3Support();
+
+            // Set chain: Level1 → Level2 → Level3
+            level1.SetNext(level2);
+            level2.SetNext(level3);
+
+            // Send requests
+            level1.HandleRequest(1);
+            level1.HandleRequest(2);
+            level1.HandleRequest(3);
+            level1.HandleRequest(4); // No handler
+            #endregion
+
+            #region Observer Pattern
+            Console.WriteLine("========================== Observer Pattern =============================");
+            #endregion
+            var subject = new Subject("Mahamad", 20);
+            var observer = new Observer(subject);
+            subject.UpdateUserAge(10);
+
 
             #endregion
         }
